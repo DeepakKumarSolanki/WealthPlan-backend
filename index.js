@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 });
 
 
-app.use('/api/register', registerRoute);
+app.use('/register', registerRoute);
 
 
 mongoose.connect(process.env.MONGO_URI)

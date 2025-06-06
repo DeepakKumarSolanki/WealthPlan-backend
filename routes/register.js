@@ -6,6 +6,8 @@ router.post('/', async (req, res) => {
   try {
     const { name, email, number, query } = req.body;
 
+    console.log("req body",req.body);
+
     if (!name || !email || !number ) {
       return res.status(400).json({ message: 'Fields are required' });
     }
